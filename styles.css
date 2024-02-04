@@ -2854,3 +2854,86 @@ picture[data-lazy] {
 .js picture[data-lazy] {
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stili per il bottone FAQ */
+button.faq {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-family: Articulat CF, system-ui, sans-serif;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+button.faq:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stili per la sezione FAQ inizialmente nascosta */
+section.domande {
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease;
+}
+
+/* Stili per le domande FAQ */
+section.domande section.faq {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.068);
+  transition: box-shadow 0.3s ease;
+}
+
+section.domande section.faq:hover {
+  font-family: Articulat CF, system-ui, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.domande h2 {
+  font-family: 'Articulat CF', system-ui, sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;  /* Aggiunto il grassetto */
+  margin-bottom: 10px;
+}
+
+section.domande p {
+  font-family: Articulat CF, system-ui, sans-serif;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Stile per mostrare/chiudere la sezione FAQ con animazione */
+section.domande.active {
+  max-height: 1800px; /* Imposta un valore appropriato in base all'altezza massima desiderata */
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.2s ease-in;
+}
+
+section.domande:not(.active) {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+}
