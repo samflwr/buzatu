@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="resume" lang="en">
+<html class="resume" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
         "sameAs": [
           "https://www.instagram.com/xvmir/",
           "https://www.linkedin.com/in/buzatu/",
-          "https://www.pinterest.it/xvmir/",
+          "https://www.twitter.com/XVMlR/",
           "https://github.com/samflwr",
           "https://xvmir.com"
         ]
@@ -71,13 +71,30 @@
             </li>
         </ul>
     </nav>
-    <main class="content" id="content" data-template="resume">
-        <section class="resume--intro">
-            <h1>Samir Buzatu</h1>
-            <a href="https://www.linkedin.com/in/buzatu" target="_blank">linkedin.com/in/buzatu</a>
-            <p>An innovative AI & machine learning specialist with a solid background in Computer Engineering from the University of Catania. Currently, holding the position of Associate AI Software Engineer at SpaceX, leading revolutionary projects in the field of artificial intelligence.</p>
+    <main class="content" id="content" data-template="resume" lang="en">
+        <section id="englishSection" class="resume--intro" itemscope itemtype="http://schema.org/Person">
+            <h1 itemprop="name">Samir Buzatu</h1>
+            <a href="https://www.linkedin.com/in/buzatu" target="_blank" itemprop="url">linkedin.com/in/buzatu</a>
+            <p itemprop="description">Samir Buzatu is a distinguished Software Engineer, Designer and the CEO of Vivienne AI, known for his expertise in software engineering and AI development. He is known for his work in artificial intelligence and design</p>
+            <meta itemprop="jobTitle" content="Associate AI Software Engineer">
+            <meta itemprop="worksFor" content="SpaceX">
         </section>
-        <section class="resume--skills">
+                
+        <section id="italianSection" class="resume--intro resume--intro-it" itemscope itemtype="http://schema.org/Person" lang="it">
+            <h1 itemprop="name">Samir Buzatu</h1>
+            <a href="https://www.linkedin.com/in/buzatu" target="_blank" itemprop="url">linkedin.com/in/buzatu</a>
+            <p itemprop="description">Samir Buzatu è un Programmatore, designer e CEO di Vivienne AI, noto per la sua competenza nello sviluppo di software e intelligenza artificiale. È conosciuto per il suo lavoro nell'intelligenza artificiale e nel design.</p>
+            <meta itemprop="jobTitle" content="Associate AI Software Engineer">
+            <meta itemprop="worksFor" content="SpaceX">
+        </section>
+
+
+
+
+
+
+        
+        <section id="englishSection" class="resume--skills">
             <h2>Skills</h2>
             <div class="skill-groups">
                 <div class="skill-groups--item">
@@ -110,7 +127,49 @@
                 </div>
             </div>
         </section>
-        <section class="resume--work">
+        
+        <!-- Sezione delle competenze in italiano -->
+        <section id="italianSection" class="resume--skills" style="display:none;">
+            <h2>Competenze</h2>
+            <div class="skill-groups">
+                <div class="skill-groups--item">
+                    <h3>Competenze Tecniche</h3>
+                    <ul>
+                        <li>Intelligenza Artificiale (AI)</li>
+                        <li>Algoritmi di Apprendimento Automatico</li>
+                        <li>Scienza dei Dati</li>
+                        <li>Cybersecurity</li>
+                        <li>Marketing Digitale</li>
+                    </ul>
+                </div>
+                <div class="skill-groups--item">
+                    <h3>Linguaggi di Programmazione</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-groups--item">
+                    <h3>Certificazioni</h3>
+                    <ul>
+                        <li>Certificazione AWS Machine Learning - Specialty</li>
+                        <li>Certificato TensorFlow Developer</li>
+                        <li>Certificato Microsoft: Fondamenti di Intelligenza Artificiale di Azure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        
+        <section id="englishSection" class="resume--work" lang="en">
             <h2>Work Experience</h2>
             <div class="work-rows">
                 <div class="work-rows--item">
@@ -135,7 +194,42 @@
                 </div>
             </div>
         </section>
-        <section class="resume--education">
+
+        <section id="italianSection" class="resume--work" lang="it">
+            <h2>Esperienza Lavorativa</h2>
+            <div class="work-rows">
+                <div class="work-rows--item">
+                    <div class="work-rows--title">
+                        <h3>SpaceX</h3>
+                        <span>Giugno 2023 – Presente</span>
+                    </div>
+                    <div class="work-rows--description">
+                        <h4>Ingegnere Software AI Associato</h4>
+                        <p>Lavorando su iniziative all'avanguardia nel campo dell'intelligenza artificiale. Conduce importanti iniziative nello sviluppo di AI, combinando competenze tecniche con il progresso di progetti creativi.</p>
+                    </div>
+                </div>
+                <div class="work-rows--item">
+                    <div class="work-rows--title">
+                        <h3>SpaceX (Freelance)</h3>
+                        <span>Marzo 2023 – Giugno 2023 (4 mesi)</span>
+                    </div>
+                    <div class="work-rows--description">
+                        <h4>Collaboratore di Progetto AI (Progetto Vivienne)</h4>
+                        <p>Collaborato con SpaceX in base a un accordo contrattuale per promuovere lo sviluppo di un progetto AI chiamato 'Vivienne'. Utilizzato le risorse di SpaceX per migliorare drasticamente le capacità dell'AI, ampliando significativamente il campo e il potenziale del progetto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+        <section id="englishSection" class="resume--education">
             <h2>Education</h2>
             <div class="education-columns">
                 <div class="education-columns--item">
@@ -174,6 +268,50 @@
                 </div>
             </div>
         </section>
+
+        <section id="italianSection" class="resume--education" lang="it">
+            <h2>Istruzione</h2>
+            <div class="education-columns">
+                <div class="education-columns--item">
+                    <h3>Università di Catania</h3>
+                    <span>Settembre 2023 – Settembre 2026</span>
+                </div>
+                <div class="education-columns--item">
+                    <strong>Laurea in Ingegneria Informatica</strong>
+                </div>
+                <div class="education-columns--item">
+                    <h4>Corsi Rilevanti</h4>
+                    <ul>
+                        <li>Intelligenza Artificiale e Apprendimento Automatico</li>
+                        <li>Tecnologie dello Sviluppo Web</li>
+                        <li>Sistemi e Gestione di Database</li>
+                        <li>Compressione Dati in Multimedia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-columns">
+                <div class="education-columns--item">
+                    <h3>Rapisardi Da Vinci</h3>
+                    <span>Settembre 2018 – Settembre 2023</span>
+                </div>
+                <div class="education-columns--item">
+                    <strong>Diploma in Informatica e Telecomunicazioni</strong>
+                </div>
+                <div class="education-columns--item">
+                    <h4>Corsi Rilevanti</h4>
+                    <ul>
+                        <li>Fondamenti della Programmazione</li>
+                        <li>Principi di Sicurezza delle Reti</li>
+                        <li>Progettazione e Implementazione di Database</li>
+                        <li>Introduzione alle Tecnologie Multimediali</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+
+        
         
     </main>
     <footer aria-label="Footer">
@@ -196,6 +334,25 @@
         </div>
     </footer>
     <script src="/public/main.js"></script>
-    <script data-goatcounter="https://cherupil.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+        // Funzione per mostrare la sezione in base alla lingua del browser
+        function showLanguageSection() {
+            var language = navigator.language || navigator.userLanguage;
+            var englishSection = document.getElementById("englishSection");
+            var italianSection = document.getElementById("italianSection");
+            
+            // Mostra la sezione in base alla lingua del browser
+            if (language.startsWith("it")) {
+                englishSection.style.display = "none";
+                italianSection.style.display = "block";
+            } else {
+                englishSection.style.display = "block";
+                italianSection.style.display = "none";
+            }
+        }
+        
+        // Esegui la funzione quando la pagina è completamente caricata
+        window.onload = showLanguageSection;
+    </script>
 </body>
 </html>
