@@ -10,7 +10,15 @@
 <url>
   <loc>http://buzatu.it/</loc>
   <lastmod>2024-02-04T19:23:18+00:00</lastmod>
+  <priority>1.0</priority> 
+
 </url>
 
+<!-- Aggiungi il link alla pagina del curriculum -->
+<url>
+  <loc>http://buzatu.it/resume</loc>
+  <lastmod>2024-05-05T00:00:00+00:00</lastmod> <!-- Aggiorna la data dell'ultima modifica -->
+  <priority>1.0</priority> 
+</url>
 
 </urlset>
