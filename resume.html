@@ -94,7 +94,7 @@
 
 
         
-        <section id="englishSection" class="resume--skills">
+        <section id="englishSkills" class="resume--skills">
             <h2>Skills</h2>
             <div class="skill-groups">
                 <div class="skill-groups--item">
@@ -129,7 +129,7 @@
         </section>
         
         <!-- Sezione delle competenze in italiano -->
-        <section id="italianSection" class="resume--skills" style="display:none;">
+        <section id="italianSkills" class="resume--skills">
             <h2>Competenze</h2>
             <div class="skill-groups">
                 <div class="skill-groups--item">
@@ -169,7 +169,7 @@
 
 
         
-        <section id="englishSection" class="resume--work" lang="en">
+        <section id="englishWork" class="resume--work" lang="en">
             <h2>Work Experience</h2>
             <div class="work-rows">
                 <div class="work-rows--item">
@@ -195,7 +195,7 @@
             </div>
         </section>
 
-        <section id="italianSection" class="resume--work" lang="it">
+        <section id="italianWork" class="resume--work" lang="it">
             <h2>Esperienza Lavorativa</h2>
             <div class="work-rows">
                 <div class="work-rows--item">
@@ -229,7 +229,7 @@
 
 
 
-        <section id="englishSection" class="resume--education">
+        <section id="englishEducation" class="resume--education">
             <h2>Education</h2>
             <div class="education-columns">
                 <div class="education-columns--item">
@@ -269,7 +269,7 @@
             </div>
         </section>
 
-        <section id="italianSection" class="resume--education" lang="it">
+        <section id="italianEducation" class="resume--education" lang="it">
             <h2>Istruzione</h2>
             <div class="education-columns">
                 <div class="education-columns--item">
@@ -338,16 +338,48 @@
         // Funzione per mostrare la sezione in base alla lingua del browser
         function showLanguageSection() {
             var language = navigator.language || navigator.userLanguage;
+            
+            
+
+            // English language sections
             var englishSection = document.getElementById("englishSection");
+            var englishSkills = document.getElementById("englishSkills");
+            var englishWork = document.getElementById("englishWork");
+            var englishEducation = document.getElementById("englishEducation");
+
+            // Italian language sections
+            var italianSkills = document.getElementById("italianSkills");
+            var italianWork = document.getElementById("italianWork");
+            var italianEducation = document.getElementById("italianEducation");
             var italianSection = document.getElementById("italianSection");
+
             
             // Mostra la sezione in base alla lingua del browser
             if (language.startsWith("it")) {
+                
+                
                 englishSection.style.display = "none";
+                englishSkills.style.display = "none";
+                englishWork.style.display = "none";
+                englishEducation.style.display = "none";
+
+                // Show Italian sections
                 italianSection.style.display = "block";
+                italianSkills.style.display = "block";
+                italianWork.style.display = "block";
+                italianEducation.style.display = "block";
             } else {
+                // Show English sections
                 englishSection.style.display = "block";
+                englishSkills.style.display = "block";
+                englishWork.style.display = "block";
+                englishEducation.style.display = "block";
+
+                // Hide Italian sections
                 italianSection.style.display = "none";
+                italianSkills.style.display = "none";
+                italianWork.style.display = "none";
+                italianEducation.style.display = "none";
             }
         }
         
